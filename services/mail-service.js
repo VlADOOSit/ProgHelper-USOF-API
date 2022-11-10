@@ -6,15 +6,15 @@ class MailService {
         this.transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'vlad.kharkovskiy22@gmail.com',
-                pass: 'rbvssntkaeqacebd'
+                user: 'Setting for you',
+                pass: 'Setting for you'
             }
         })
     }
 
     async sendActivationMail(to, link) {
         await this.transporter.sendMail({
-            from: 'vlad.kharkovskiy22@gmail.com',
+            from: 'Setting for you',
             to,
             subject: 'Activation account  USOF',
             text: '',
@@ -30,7 +30,7 @@ class MailService {
 
     async sendPass(to, pass) {
         await this.transporter.sendMail({
-            from: 'vlad.kharkovskiy22@gmail.com',
+            from: 'Setting for you',
             to,
             subject: 'Activation account  USOF',
             text: '',
