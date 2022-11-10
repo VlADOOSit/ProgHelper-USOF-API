@@ -1,8 +1,10 @@
 USOF api
 
-# For start server 
--npm install<br>
--npm start
+# For start server<br>
+    -npm install<br>
+    -npm start
+
+*Pls, if you want start project, change data for you e-mail in services/mail-service.js 
 
 Endpoints
 
