@@ -7,10 +7,10 @@ For start server
 #Endpoints
 
 #•Authentication module:<br>
-    –POST - /api/auth/register- registration of a new user, required parameters are[login, password, fullName, email, avatar]<br>
-    –POST - /api/auth/login - log in user, required parameters are [login, password]. Only users with a confirmed email can sign in<br>
-    –POST - /api/auth/logout - log out authorized user–POST - /api/auth/password-reset- send a reset link to user email, requiredparameter is [email]<br>
-    -GET - /api/auth/regresh - refresh token<br>
+    >>>>–POST - /api/auth/register- registration of a new user, required parameters are[login, password, fullName, email, avatar]<br>
+    >>>>–POST - /api/auth/login - log in user, required parameters are [login, password]. Only users with a confirmed email can sign in<br>
+    >>>>–POST - /api/auth/logout - log out authorized user–POST - /api/auth/password-reset- send a reset link to user email, requiredparameter is [email]<br>
+    >>>>-GET - /api/auth/regresh - refresh token<br>
 #•User module:<br>
     –GET - /api/users- get all users<br>
     –GET - /api/users/<user_id>- get specified user data<br>
