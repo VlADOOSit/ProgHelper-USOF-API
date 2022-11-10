@@ -4,21 +4,21 @@ For start server
 -npm install
 -npm start
 
-Endpoints
+#Endpoints
 
-•Authentication module:<br>
+#•Authentication module:<br>
     –POST - /api/auth/register- registration of a new user, required parameters are[login, password, fullName, email, avatar]<br>
     –POST - /api/auth/login - log in user, required parameters are [login, password]. Only users with a confirmed email can sign in<br>
     –POST - /api/auth/logout - log out authorized user–POST - /api/auth/password-reset- send a reset link to user email, requiredparameter is [email]<br>
     -GET - /api/auth/regresh - refresh token<br>
-•User module:<br>
+#•User module:<br>
     –GET - /api/users- get all users<br>
     –GET - /api/users/<user_id>- get specified user data<br>
     –POST - /api/users- create a new user, required parameters are [login, password, email, role]. This feature must be accessible only for admins<br>
     –PATCH - /api/users/avatar- upload user avatar<br>
     –PATCH - /api/users/<user_id>- update user data<br>
     –DELETE - /api/users/<user_id>- delete user<br>
-•Post module:<br>
+#•Post module:<br>
     –GET - /api/posts- get all posts.This endpoint doesn't require any role, it ispublic. If there are too many posts, you must implement pagination. Page size isup to you
     –GET - /api/posts/<post_id>- get specified post data.Endpoint is public
     –GET - /api/posts/<post_id>/comments- get all comments for the specified post.Endpoint is public
